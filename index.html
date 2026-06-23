@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>El Legado de los 23</title>
+
+<style>
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+    padding:40px;
+}
+
+h1{
+    color:gold;
+}
+
+input{
+    padding:10px;
+    font-size:18px;
+}
+
+button{
+    padding:10px 20px;
+    margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🐉 El Legado de los 23 🐉</h1>
+
+<p>
+Titina ha solicitado acceso a la Orden de los 23.
+</p>
+
+<p>
+Introduce la contraseña:
+</p>
+
+<input id="codigo">
+
+<br>
+
+<button onclick="comprobar()">
+Validar
+</button>
+
+<p id="resultado"></p>
+
+<script>
+
+function comprobar(){
+
+let codigo =
+document.getElementById("codigo")
+.value
+.toUpperCase();
+
+if(codigo=="DRAGON"){
+
+document.getElementById("resultado")
+.innerHTML =
+"✨ Correcto. Has superado la primera prueba.";
+
+}else{
+
+document.getElementById("resultado")
+.innerHTML =
+"❌ Incorrecto";
+}
+
+}
+
+</script>
+
+</body>
+</html>
